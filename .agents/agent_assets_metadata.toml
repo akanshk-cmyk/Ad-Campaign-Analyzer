@@ -30,3 +30,17 @@ storage_uri = "gcs://replit-rams-assets-reed/rams/assets/conversation:45c349a4-a
 storage_version_token = "1791669134867350"
 content_type = "text/markdown"
 source_uri = "file://ad-campaign-analyzer-langchain-implementation-plan.md"
+
+[[outputs]]
+id = "lJTlHvEh_osAMLG_SrdQN"
+uri = "file://artifacts/ad-campaign-analyzer/examples/campaign-test-data.csv"
+type = "table"
+title = "Ad Campaign Analyzer test CSV"
+description = "13 synthetic campaign rows covering Facebook, Instagram, Pinterest, and Twitter/X. Includes multiple dates, audiences, goals, attributed revenue, and zero-result cases for testing."
+logical_id = "cf67b68a-a1a8-4d16-9fb2-8dd073f029d4"
+content_hash = "sha256:1888ee8472aa0cf2c02a6209215cf5ebc2d7327534072981bf8eaae2d08d3020"
+size = 1269
+mtime_ms = 1791670174853
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:d3541db3-74c4-4a58-b8ac-7b74b59ed6ca/cf67b68a-a1a8-4d16-9fb2-8dd073f029d4/2bcf2224-6d5b-4296-9201-819682ce385c"
+storage_version_token = "1791670197103925"
+content_type = "text/csv"
