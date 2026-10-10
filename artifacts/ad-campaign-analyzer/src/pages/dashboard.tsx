@@ -343,9 +343,9 @@ export default function Dashboard() {
           {noMatches ? <div className="panel flex min-h-[330px] flex-col items-center justify-center px-6 text-center" data-testid="empty-no-results">
             <div className="mb-4 grid h-14 w-14 place-items-center rounded-2xl bg-accent text-accent-foreground"><Search size={23} /></div><h2 className="display text-xl font-bold">Nothing matches this filter set.</h2><p className="mt-2 max-w-md text-sm leading-6 text-muted-foreground">The uploaded file is intact. Widen the date range or clear one or more filters to see campaign results again.</p><button onClick={resetFilters} data-testid="button-clear-no-results" className="mt-5 rounded-lg bg-primary px-4 py-2.5 text-xs font-bold text-primary-foreground">Reset all filters</button>
           </div> : <>
-            <div className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+            {view === 'Overview' && <div className="mb-6 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
               {metricCards.map(m => <MetricCard key={m.marker} {...m} />)}
-            </div>
+            </div>}
             {view === 'Overview' && <div className="fade-up space-y-5">
               <div className="grid grid-cols-1 gap-5 xl:grid-cols-[1.6fr_1fr]">
                 <ChartPanel title="Spend & conversions" subtitle="Daily spend in USD · conversion count on right axis" csvName="daily-spend-and-conversions" exportRows={trendData.map(d => ({ date: d.date, spend: d.spend, conversions: d.conversions }))}>
