@@ -260,7 +260,7 @@ export default function Dashboard() {
     <aside className="print-hidden fixed inset-y-0 left-0 z-20 hidden w-[226px] flex-col bg-sidebar text-sidebar-foreground lg:flex">
       <div className="flex h-[76px] items-center gap-3 border-b border-sidebar-border px-6">
         <div className="grid h-9 w-9 place-items-center rounded-xl bg-primary text-primary-foreground"><BarChart3 size={19} strokeWidth={2.5} /></div>
-        <div><div className="display text-[15px] font-extrabold tracking-tight">Margin / Media</div><div className="mono mt-0.5 text-[9px] uppercase tracking-[.16em] text-sidebar-foreground/55">Campaign analyzer</div></div>
+        <div><div className="display text-[12px] font-extrabold tracking-tight">Ad Campaign Analyzer</div></div>
       </div>
       <div className="px-4 pt-7">
         <p className="mono mb-3 px-3 text-[9px] uppercase tracking-[.2em] text-sidebar-foreground/40">Workspace</p>
