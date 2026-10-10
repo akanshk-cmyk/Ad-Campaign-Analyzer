@@ -29,7 +29,7 @@
 **Choreography:** 0.00–0.35s the cursor dot punches in with a stiff snap and a thin rule appears. 0.35–0.9s the row name resolves from blur and a scan aperture moves across it. 0.90–2.15s the three amounts count from zero in sequential, beat-sized bursts while their tiny mono labels pop in. 2.15–3.15s the table rails slide into alignment as the camera pulls back to reveal the row as a complete record. 3.20–4.15s copy holds while the red cursor scales up and begins to eclipse the composition. 4.15–4.50s it fills frame; no bare field.
 **Transition contract:** The last red cursor dot becomes the chart's red point of origin in Shot 02; the expanding circle provides a masked cut, while an ink panel arrives underneath.
 **Assets/technique:** All original motion-graphic dashboard shapes and typography; clip-path scan window, SVG rule, count-up number keyframes. No external imagery.
-**Sound intent:** Instrumental bed; opening snap and value changes should find early rhythmic accents. Planned boundary at 4.50s, unverified until audio generation.
+**Sound intent:** Calm ambient bed with a soft opening pulse; the 4.50s outgoing aperture meets the first measured musical accent.
 
 ### Shot 02 / 4.50–9.00s / 4.50s — “See the shape.”
 **Purpose:** Turn separate daily records into a trend that can be read at a glance.
@@ -38,7 +38,7 @@
 **Choreography:** 0.00–0.35s the red point lands and emits one fine ring as the ink plane locks behind it. 0.35–1.10s a tracked date range wipes across the top edge. 0.75–1.95s the area curve draws continuously from left to right; 5 data ticks hit in rising cadence. 1.80–2.40s spend and conversion totals cross-fade via a tight shared number stage, not layout reflow. 2.70s chart lifts 4% toward camera; 3.00–4.05s the insight typesets on an ivory strip while the curve continues to travel. 4.05–4.50s its final rising stroke becomes the next scene's first divider.
 **Transition contract:** The ascending chart stroke reaches a tall vertical line exactly at the edge; that line opens four column lanes in Shot 03. Combined chart draw + panel inversion make the boundary.
 **Assets/technique:** SVG area/line plot, hand-set ticks, CSS/SVG masks. Totals match the supplied sample campaign dataset; no claim of live connection.
-**Sound intent:** Instrumental continues; planned cut at 9.00s, unverified until audio generation.
+**Sound intent:** A sustained ambient chord carries the chart; the 9.00s divider cut lands on a measured rounded note accent.
 
 ### Shot 03 / 9.00–14.00s / 5.00s — “Compare the channels.”
 **Purpose:** Show platform comparison as a direct visual choice, without overwhelming the viewer.
@@ -47,7 +47,7 @@
 **Choreography:** 0.00–0.35s the incoming chart stroke becomes the baseline and vertical separators snap into four lanes. 0.35–1.10s bars rise in a deliberate 90ms stagger, overshooting then settling. 1.10–1.90s platform names stamp beneath each; the tallest bar advances to 1.08 scale while the others compress to 0.88, maintaining their visibility. 2.00s headline appears above the bars through a bottom-up mask. 2.45–3.25s three mono readout tokens arrive one at a time under the winner. 3.55–4.25s the framing tightens and the selected bar's red face widens into a window. 4.25–5.00s the four lanes travel through that window as layered table rules; active motion reaches the cut.
 **Transition contract:** Red winning bar expands to become the red vertical rule on the detail table. The widening geometry, a slight camera pull, and change from vertical bars to horizontal rows compound the transition.
 **Assets/technique:** Vector bars/labels, spring choreography, clip-path bar-to-window. Metrics match the supplied sample rows only.
-**Sound intent:** Instrumental continues; planned cut at 14.00s, unverified until audio generation.
+**Sound intent:** The calm bed stays spacious beneath the comparison; the 14.00s table handoff meets a measured soft note accent.
 
 ### Shot 04 / 14.00–19.50s / 5.50s — “Every number, traceable.”
 **Purpose:** Make the summary feel trustworthy by reconnecting it to source rows and filters.
@@ -56,7 +56,7 @@
 **Choreography:** 0.00–0.30s red divider hits and the table unfolds from center outward. 0.35–1.20s the three sample rows enter from alternating shallow depth, stopping on a single grid. 1.35–2.05s row values illuminate left to right in order (spend, clicks, conversions, revenue); each illumination is a thin bar that travels the row. 2.10–2.85s ghosted bar and chart forms move behind the ledger and snap onto matching columns, then fade to 18% opacity. 3.00s `Filters apply everywhere.` reveals as one masked line. 3.80–4.45s the data lineage sentence builds with arrows as links between columns. 4.55–5.10s all rules contract toward one underline; 5.10–5.50s the underline pulls inward and lifts the final title into a quiet paper field.
 **Transition contract:** Source-table grid contracts into the title's underline; layered table-to-flat-field transformation and opacity falloff hand to Shot 05. No empty white tail.
 **Assets/technique:** Reconstructed rows inspired by the supplied sample; data is local and illustrative. Animated SVG lines, perspective-safe scale, layered opacity.
-**Sound intent:** Instrumental continues; planned cut at 19.50s, unverified until audio generation.
+**Sound intent:** Sustained pads support the ledger; the 19.50s resolving field begins on a measured soft note accent.
 
 ### Shot 05 / 19.50–24.00s / 4.50s — “Know what spend is doing.”
 **Purpose:** Resolve the film as a clear promise and create a loop that returns to the first campaign row.
@@ -65,12 +65,12 @@
 **Choreography:** 0.00–0.45s underline collapses into a cream dot and the red field grows from that dot. 0.45, 0.88, 1.32s the three one-word hits land with stiff springs, each replacing the previous in the same absolute stage. 1.70–2.30s the three words compress into a small circular data mark. 2.30–2.85s headline expands from the mark on a cream mask; 2.85–3.40s product name resolves underneath with letter spacing tightening. 3.40–4.05s final footer fades in and the mark performs a slow quarter-orbit; 4.05–4.50s mark travels to the opening row's cursor position, red background iris closes to the opening cream ledger. The loop handoff preserves motion and never exposes a blank field.
 **Transition contract:** Final geometric mark travels into the same upper-left cursor coordinate and scale as Shot 01; closing aperture reveals Shot 01's ledger underneath. Palette inversion, scale reversal, and shared data dot make the loop distinct from any middle cut.
 **Assets/technique:** Geometric brand mark drawn from a circle and four rule segments; masked type, spring word replacement, iris-to-opening match.
-**Sound intent:** Instrumental ending resolves on the first scene's opening downbeat. Planned boundary at 24.00s, unverified until audio generation.
+**Sound intent:** The ambient harmony resolves to the opening chord at 24.00s so the visual loop returns without a new sound layer.
 
 ## Audio spec
 - Runtime: 24 s (SCENE_DURATIONS total).
-- Music: restrained, forward-moving editorial electronic instrumental for a data-product overview; 120 BPM, muted analog bass pulse, clipped hand percussion, short pentatonic data ticks, warm sustained chord bed. Patient first half-second, then clean recurring accents around the scene cuts at 4.5s, 9.0s, 14.0s, and 19.5s; resolved ending suitable for a seamless visual loop. No vocals, no harsh highs. The in-environment `generateMusic` callback required a paid-mode confirmation unavailable on this run; the 24-second original synth bed was assembled locally as a free fallback.
+- Music: calm ambient instrumental for an editorial data-product overview; 80 BPM, warm sustained chord pads, a rounded low pulse, and sparse felt-key / glassy sine-note accents with gentle tails. Spacious, patient, low-dynamic movement; no vocals, no sharp percussion or harsh highs. Soft accents at 4.5s, 9.0s, 14.0s, and 19.5s; the final chord returns to the opening harmony for the visual loop. The `generateMusic` callback required paid-mode confirmation unavailable on this run, so the replacement instrumental was synthesized locally as a free fallback.
 - Voiceover: none requested.
 - SFX: none requested.
 - Playback file: `bg_music.mp3`.
-- Scene boundaries align to measured RMS onsets at 4.5s, 9.0s, 14.0s, and 19.5s. The 24.0-second render is 120 BPM.
+- RMS analysis of the 24-second `bg_music.mp3` measured accents at 4.50s, 9.00s, 14.00s, and 19.50s, matching the unchanged scene boundaries. MP3 duration: 24.03s including encoder padding.
