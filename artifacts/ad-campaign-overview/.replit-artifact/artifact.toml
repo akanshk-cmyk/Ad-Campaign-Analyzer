@@ -1,0 +1,29 @@
+kind = "video"
+videoAspectRatio = "16:9"
+previewPath = "/ad-campaign-overview/"
+title = "Ad Campaign Analyzer Overview"
+description = "An animated overview of the Ad Campaign Analyzer, showing campaign file upload, shared filters, dashboard views, and its aggregate-only assistant."
+version = "1.0.0"
+id = "artifacts/ad-campaign-overview"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/ad-campaign-overview/" ]
+localPort = 25829
+
+[services.development]
+run = "pnpm --filter @workspace/ad-campaign-overview run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/ad-campaign-overview", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/ad-campaign-overview/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25829"
+BASE_PATH = "/ad-campaign-overview/"
