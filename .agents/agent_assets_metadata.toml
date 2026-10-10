@@ -1,0 +1,32 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "sGau56uPK10ayGEbTGryo"
+uri = "file://.local/conversation-workspace/files/ad-campaign-performance-analyzer-prd.md"
+type = "text"
+title = "Ad Campaign Performance Analyzer — PRD (v1.2)"
+description = "Updated with downloadable CSV and Excel templates, PM approval, and an MVP-only 20-second latency target."
+logical_id = "88fce821-576a-4ea7-b301-7e2f80773ade"
+content_hash = "sha256:21e51af4629e07ae66df179c22dad9c9b2ddc1b779d05fe40e67f64f7ea2e6fe"
+size = 19590
+mtime_ms = 1791668210025
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/conversation:45c349a4-a400-47ee-ba17-8d111502e044/88fce821-576a-4ea7-b301-7e2f80773ade/e0b07bda-246a-4f30-a90b-fac079d874fb"
+storage_version_token = "1791668214032956"
+content_type = "text/markdown"
+source_uri = "file://ad-campaign-performance-analyzer-prd.md"
+
+[[outputs]]
+id = "7KOmfT9ap_7Q8f5NKTYdc"
+uri = "file://.local/conversation-workspace/files/ad-campaign-analyzer-langchain-implementation-plan.md"
+type = "text"
+title = "Ad Campaign Analyzer — LangChain Implementation Plan"
+description = "Step-by-step developer design mapping the PRD and LangChain course concepts to the Streamlit app, with safe read-only tools, data flow, tests, and MVP boundaries."
+logical_id = "0dcfbbb6-05c4-4519-b34b-594f2167325d"
+content_hash = "sha256:f23f29c65927fda8b3bb2e69862e42ab48345a331d1dd98d1b20c89c67e1987d"
+size = 11742
+mtime_ms = 1791669129442
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/conversation:45c349a4-a400-47ee-ba17-8d111502e044/0dcfbbb6-05c4-4519-b34b-594f2167325d/4058c366-25a9-4bf8-a155-e5ed620637a6"
+storage_version_token = "1791669134867350"
+content_type = "text/markdown"
+source_uri = "file://ad-campaign-analyzer-langchain-implementation-plan.md"

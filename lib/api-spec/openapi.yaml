@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: campaign-assistant
+    description: Read-only explanations of user-provided, filtered campaign aggregates
 paths:
   /healthz:
     get:
@@ -24,6 +26,29 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /campaign-assistant:
+    post:
+      operationId: askCampaignAssistant
+      tags: [campaign-assistant]
+      summary: Ask a question about filtered campaign aggregates
+      description: Accepts aggregates and filter context only; never accepts uploaded campaign rows or files.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CampaignAssistantRequest"
+      responses:
+        "200":
+          description: An evidence-backed answer based on the supplied aggregate context
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CampaignAssistantResponse"
+        "400":
+          description: The request or aggregate context is invalid
+        "503":
+          description: The assistant is temporarily unavailable
 components:
   schemas:
     HealthStatus:
@@ -33,4 +58,166 @@ components:
           type: string
       required:
         - status
+    CampaignMetricSet:
+      type: object
+      properties:
+        spend:
+          type: number
+          minimum: 0
+        clicks:
+          type: number
+          minimum: 0
+        conversions:
+          type: number
+          minimum: 0
+        attributedRevenue:
+          type:
+            - number
+            - "null"
+          minimum: 0
+        cpa:
+          type:
+            - number
+            - "null"
+        roi:
+          type:
+            - number
+            - "null"
+        roas:
+          type:
+            - number
+            - "null"
+        rowCount:
+          type: integer
+          minimum: 0
+      required:
+        - spend
+        - clicks
+        - conversions
+        - attributedRevenue
+        - cpa
+        - roi
+        - roas
+        - rowCount
+    CampaignAssistantPlatform:
+      allOf:
+        - $ref: "#/components/schemas/CampaignMetricSet"
+        - type: object
+          properties:
+            channel:
+              type: string
+              enum: [Facebook, Instagram, Pinterest, "Twitter/X"]
+          required:
+            - channel
+    CampaignAssistantTrendPoint:
+      allOf:
+        - $ref: "#/components/schemas/CampaignMetricSet"
+        - type: object
+          properties:
+            date:
+              type: string
+              format: date
+          required:
+            - date
+    CampaignAssistantFilters:
+      type: object
+      properties:
+        startDate:
+          type: string
+          format: date
+        endDate:
+          type: string
+          format: date
+        channels:
+          type: array
+          items:
+            type: string
+        audiences:
+          type: array
+          items:
+            type: string
+        goals:
+          type: array
+          items:
+            type: string
+      required:
+        - channels
+        - audiences
+        - goals
+    CampaignAssistantContext:
+      type: object
+      properties:
+        currency:
+          type: string
+          enum: [USD]
+        filters:
+          $ref: "#/components/schemas/CampaignAssistantFilters"
+        summary:
+          $ref: "#/components/schemas/CampaignMetricSet"
+        platforms:
+          type: array
+          maxItems: 4
+          items:
+            $ref: "#/components/schemas/CampaignAssistantPlatform"
+        trend:
+          type: array
+          maxItems: 500
+          items:
+            $ref: "#/components/schemas/CampaignAssistantTrendPoint"
+      required:
+        - currency
+        - filters
+        - summary
+        - platforms
+        - trend
+    CampaignAssistantRequest:
+      type: object
+      properties:
+        question:
+          type: string
+          minLength: 1
+          maxLength: 500
+        context:
+          $ref: "#/components/schemas/CampaignAssistantContext"
+      required:
+        - question
+        - context
+    CampaignAssistantEvidence:
+      type: object
+      properties:
+        metric:
+          type: string
+        scope:
+          type: string
+        value:
+          type: string
+        unit:
+          type: string
+      required:
+        - metric
+        - scope
+        - value
+        - unit
+    CampaignAssistantResponse:
+      type: object
+      properties:
+        answer:
+          type: string
+        evidence:
+          type: array
+          items:
+            $ref: "#/components/schemas/CampaignAssistantEvidence"
+        caveats:
+          type: array
+          items:
+            type: string
+        suggestedFollowUp:
+          type:
+            - string
+            - "null"
+      required:
+        - answer
+        - evidence
+        - caveats
+        - suggestedFollowUp
 
