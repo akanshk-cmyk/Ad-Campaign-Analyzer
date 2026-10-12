@@ -191,20 +191,12 @@ This is a lightweight status-quo comparison, not a researched competitor assessm
 - **Small or sparse data is over-interpreted:** Show counts and dates; do not imply missing dates or absent platforms equal zero performance.
 - **Upload size affects responsiveness:** Enforce the 10 MB / 500-row guardrail and benchmark the 20-second target on the target deployment before release.
 
-## 13. DACI and ownership
-
-| Role | Who | Responsibility |
-|---|---|---|
-| Driver | Product Manager (TBD) | Own scope and resolve open product decisions |
-| Approver | Product Manager (PM) | Final approval of MVP scope |
-| Contributors | Designer and engineer (TBD) | Review interaction design, data handling, and implementation estimates |
-| Informed | Relevant marketing stakeholders (TBD) | Receive status and launch outcome |
-
-## 14. Implementation validation before release
+## 13. Implementation validation before release
 
 - Benchmark the 20-second MVP latency target in the intended deployment environment using a representative file within the 10 MB / 500-row limits. This is an MVP target, not a commitment for later versions.
 
-## 15. Suggested implementation sequence
+
+## 14.  Suggested implementation sequence
 
 1. Define and test the CSV contract, validation, normalization, and metric calculations with a small reference dataset.
 2. Build upload flow, shared filter state, and empty/error states.
